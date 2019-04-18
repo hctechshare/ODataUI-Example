@@ -1,0 +1,162 @@
+<!-- Form examples from:
+https://www.codeply.com/go/JVP2nxfv0p/bootstrap-4-form-examples -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="#">Father Hennepin CSA</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">Sign up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="orderform.html">Place order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Give us feedback</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="customersview.html">Customers view</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ordersview.html">Orders view</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feedbackview.html">Feedback view</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" style="padding-top: 20px">
+        <h2>Father Hennepin Full Season CSA</h2>
+        <br />
+    
+        <div class="form-group">
+            <label for="inputName">Customer ID</label>
+            <input type="text" id="CustomerID" placeholder="#####">
+        </div>
+        
+        <div class="card card-outline-secondary">
+            <div class="card-header">
+                <h3>Father Hennepin Full Season CSA Share</h3>
+            </div>
+            <div class="card-body">
+                <div><strong>Processed products</strong> —
+                    Fresh or frozen cider every week, sauce, jelly, syrup, culinary vinegar.<br> <strong>The Produce
+                        Fruits</strong> — Rhubarb, strawberries, cherries, raspberries (red, black, purple, yellow),
+                    blueberries, apricots, plums, and apples.<br> <strong>Veggies</strong> — winter onion,
+                    asparagus, lovage, chives, spinach, sorrel, asian greens, nettle shoots, spring greens, radish,
+                    peas, kale, kohlrabi, broccoli, cauliflower, brussel sprouts, beans, kohlrabi,
+                    zucchini,tomatoes, tomatillos, garlic, onions, beets, carrots, turnips<br> <strong>20
+                        Deliveries</strong> — May through Mid Sept for $600. Early Bird Special if paid before
+                    4/1/17 is $550.</div>
+                    <div> <span>Price:</span> <span>$600.00</span>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="FullSeasonCSA">
+                            <label class="form-check-label" for="exampleCheck1">Full season CSA Share</label>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br />
+    
+        <div class="card card-outline-secondary">
+            <div class="card-header">
+                <h3>Father Hennepin Meat Add On</h3>
+            </div>
+            <div class="card-body">
+                <strong>The Meats</strong> — One package of
+                our Farm raised meat - Pork (Roasts, chops, wild rice brats, breakfast sausage, hocks, liver), Lamb
+                (grounded, roasts, chops, shanks), Chicken.<br> <strong>20 Deliveries</strong> — May through August
+                for $180.
+                <div> <span>Price:</span> <span>$180.00</span>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="MeatAddOn">
+                        <label class="form-check-label" for="exampleCheck1">Meat add on</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    
+        <div class="card card-outline-secondary">
+            <div class="card-header">
+                <h3>Father Hennepin Hard Cider Add On</h3>
+            </div>
+            <div class="card-body">
+                <div>
+                    At least one bottle of hard cider or fruit wine added to your CSA box.<br> <strong>20 Deliveries</strong> — May through August for $160.
+            </div>
+            <div><span>Price:</span> <span>$600.00</span> 
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="HardCiderAddOn">
+                    <label class="form-check-label" for="exampleCheck1">Hard cider add on</label>
+                </div>
+            </div>
+        </div>
+        <br />
+    
+        <div class="card card-outline-secondary">
+            <div class="card-header">
+                <h3>Pick your own fruit CSA Share</h3>
+            </div>
+            <div class="card-body">
+                <div>June - Strawberries- 12 pints<br> July -
+                    Raspberries- 6 pints<br> Aug - Tomatoes- 20 pounds<br> Sept - Apples- 20 pounds<br><strong>4
+                        Fruits</strong> — June through Sept $160 On Farm only.</div>
+                <div><span>Price:</span> <span>$600.00</span>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="Fruit">
+                        <label class="form-check-label" for="Fruit">Fruit CSA share</label>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    
+        <button type="button" id="placeOrder" class="btn btn-primary">Place Order</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    $( document ).ready(function() {
+        //button click handler
+        $( "#placeOrder" ).click(function() {
+            var formData = {
+                "CustomerID": $("#CustomerID").val(),
+                "FullSeasonCSA" : $("#FullSeasonCSA").prop("checked"),
+                "MeatAddOn" : $("#MeatAddOn").prop("checked"),
+                "HardCiderAddOn" : $("#HardCiderAddOn").prop("checked"),
+                "Fruit" : $("#Fruit").prop("checked")
+            }
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://hcodataexample.azurewebsites.net/api/orders",
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "cache-control": "no-cache"
+                },
+                "processData": false,
+                "data": JSON.stringify(formData)
+            }
+
+            $.ajax(settings).done(function (response) {
+                alert("Your order is complete. Your order number is: " + response.orderNumber);
+                console.log("Response from order form submission:", response);
+            });
+        });        
+    });    
+</script>
+</body>
+</html>
